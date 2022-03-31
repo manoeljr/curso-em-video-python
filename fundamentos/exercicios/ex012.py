@@ -6,3 +6,4 @@
 preco = float(input('Informe o valor do produto : '))
 
 print(f'Novo preço do produto foi : {preco - (preco * 0.05)}')
+# print(f'Novo preço do produto foi : {preco - (preco * 5/100)}')
