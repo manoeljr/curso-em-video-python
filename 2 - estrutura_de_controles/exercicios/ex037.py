@@ -20,7 +20,9 @@ if conversao_base == 1:
 elif conversao_base == 2:
     octal = oct(numero)
     print(f'Valor convertido para Octal : {octal}')
-else:
+elif:
     hexadecimal = hex(numero)
     print(f'Valor convertido para hexadecimal : {hexadecimal}')
+else:
+    print('Opção Inválida !')
 
