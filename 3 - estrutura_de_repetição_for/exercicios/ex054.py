@@ -8,7 +8,6 @@ from datetime import date
 ano_atual = date.today().year
 pessoas_nao_maioridade, pessoas_maioridade = 0, 0
 
-
 for pessoa in range(1, 8):
     ano = int(input('Digite o ano que você nasceu : '))
 
@@ -16,6 +15,5 @@ for pessoa in range(1, 8):
         pessoas_maioridade += 1
     else:
         pessoas_nao_maioridade += 1
-
 
 print(f'{pessoas_maioridade} pessoas maioridade e {pessoas_nao_maioridade} pessoas não maioridade')

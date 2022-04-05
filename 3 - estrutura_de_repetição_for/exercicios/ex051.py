@@ -5,13 +5,12 @@
 
 primeiro_termo = int(input('Digite o primeiro termo : '))
 razao = int(input('Digite a razão : '))
-soma = 0
 
-ultimo = primeiro_termo + ((10 - 1) * razao)
-ultimo = ultimo + 1
+ultimo = primeiro_termo + (10 - 1) * razao
 
-for i in range(primeiro_termo, ultimo, razao):
-    print(i)
-    soma = soma + i
+for i in range(primeiro_termo, ultimo + razao, razao):
+    print(i, end='->')
+
+print('Final')
 
 
