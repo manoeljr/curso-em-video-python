@@ -39,11 +39,18 @@ while(opcao):
         print(f'A Multiplicação dos dois valores foi {primeiro * segunda}')
         break
     elif opcao == 3:
-        print(f'Maior valor em o primeiro e segundo foi {max(primeiro, segunda)}')
-        break
+        if max(primeiro, segunda):
+            print(f'Maior valor em o primeiro e segundo foi {max(primeiro, segunda)}')
+            break
+        else:
+            print(f'Não existe número maior')
+            continue
     elif opcao == 4:
         continue
     elif opcao == 5:
         print('Saindo do sistema...')
         sleep(2)
         break
+    else:
+        print('Opção inválida !')
+        continue
