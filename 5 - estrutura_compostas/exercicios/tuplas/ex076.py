@@ -13,7 +13,7 @@ listagem = (
 )
 
 print('_' * 40)
-print('Lista de produto e preços ')
+print(f'{"Lista de produto e preços":^40} ')
 print('_' * 40)
 for produto in range(0, len(listagem)):
     if produto % 2 == 0:
