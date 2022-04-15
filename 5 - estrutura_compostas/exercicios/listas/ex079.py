@@ -13,16 +13,16 @@ while True:
         print('Valor já existe ! ', end='')
         opcao = str(input('Deseja continua? [S/N]')).strip().upper()
 
-        if opcao == 'Ss':
+        if opcao == 'S':
             continue
         else:
             break
-    else:
-        valores.append(valor)
-        print('Valor adicionado com sucesso. ', end='')
-        opcao = str(input('Deseja continua? [S/N]')).strip().upper()
 
-        if opcao == 'Ss':
-            continue
-        else:
-            break
+    valores.append(valor)
+    print('Valor adicionado com sucesso. ', end='')
+    opcao = str(input('Deseja continua? [S/N]')).strip().upper()
+
+    if opcao == 'S':
+        continue
+    else:
+        break
