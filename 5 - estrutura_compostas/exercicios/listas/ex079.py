@@ -11,7 +11,7 @@ while True:
 
     if valor in valores:
         print('Valor já existe ! ', end='')
-        opcao = str(input('Deseja continua? [S/N]')).strip().upper()
+        opcao = str(input('Deseja continua? [S/N]')).strip().upper()[0]
 
         if opcao == 'S':
             continue
@@ -20,7 +20,7 @@ while True:
 
     valores.append(valor)
     print('Valor adicionado com sucesso. ', end='')
-    opcao = str(input('Deseja continua? [S/N]')).strip().upper()
+    opcao = str(input('Deseja continua? [S/N]')).strip().upper()[0]
 
     if opcao == 'S':
         continue
