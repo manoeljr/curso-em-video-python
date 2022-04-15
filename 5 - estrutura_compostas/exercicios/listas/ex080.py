@@ -3,3 +3,6 @@
     em uma lista, já na posição correta de insersão(sem usar o sort())
     No final, mostre a lista ordenada na tela.
 """
+valores = []
+
+for valor in range(5):

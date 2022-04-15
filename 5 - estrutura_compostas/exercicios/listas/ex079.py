@@ -26,3 +26,5 @@ while True:
         continue
     else:
         break
+
+print(f'Você digitou os valores -> {sorted(valores)}')
