@@ -18,5 +18,6 @@ while True:
 
 print('=' * 30)
 print(f'Você digitou {len(numeros)} elementos.')
-print(f'Lista ordenada de forma decrescente -> {numeros.sort(reverse=True)}')
+numeros.sort(reverse=True)
+print(f'Lista ordenada de forma decrescente -> {numeros}')
 print(f'O Valor 5 foi digitado -> {"Sim" if 5 in numeros else "Não"}')
