@@ -9,4 +9,14 @@ pares = []
 impares = []
 
 for valor in range(0, 7):
-    pass
+    numero = int(input('Digite um número: '))
+    if numero % 2 == 0:
+        pares.append(numero)
+    elif numero % 2 == 1:
+        impares.append(numero)
+
+valores.append(pares)
+valores.append(impares)
+
+print(f'Valores pares -> {sorted(valores[0])}')
+print(f'Valores impares -> {sorted(valores[1])}')
