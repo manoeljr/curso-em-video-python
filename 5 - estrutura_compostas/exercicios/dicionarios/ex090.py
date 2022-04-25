@@ -3,3 +3,5 @@
     guardando também a situação em um dicionário. No final,
     mostre o contéudo da estrutura na tela.
 """
+
+
