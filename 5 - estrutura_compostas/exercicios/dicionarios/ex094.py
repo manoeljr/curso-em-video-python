@@ -45,7 +45,7 @@ print()
 print(f'D) Lista das pessoas que estão acima da média: ')
 for p in galera:
     if p['idade'] >= media:
-        print('     ')
+        print('     ', end='')
         for key, value in p.items():
             print(f'{key} = {value}; ', end='')
         print()
