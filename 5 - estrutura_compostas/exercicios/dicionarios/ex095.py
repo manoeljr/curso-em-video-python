@@ -3,28 +3,37 @@
     incluindo um sistema de visualização de detalhes do aproveitamento
     de cada jogador.
 """
+time = []
 jogador = {}
 partidas = []
 
-jogador['nome'] = str(input('Nome do jogador: '))
-total = int(input(f'Quantas partidas {jogador["nome"]} jogou ?'))
+while True:
+    jogador.clear()
+    jogador['nome'] = str(input('Nome do jogador: '))
+    total = int(input(f'Quantas partidas {jogador["nome"]} jogou ?'))
+    partidas.clear()
 
-for contador in range(0, total):
-    partidas.append(int(input(f'        Quantos gols na partida {contador + 1} ?')))
+    for contador in range(0, total):
+        partidas.append(int(input(f'        Quantos gols na partida {contador + 1} ?')))
 
-jogador['gols'] = partidas[:]
-jogador['total'] = sum(partidas)
+    jogador['gols'] = partidas[:]
+    jogador['total'] = sum(partidas)
 
-print('-=' * 30)
-print(jogador)
-print('-=' * 30)
-for key, value in jogador.items():
-    print(f'O Campo {key} temo valor {value}')
+    time.clear(jogador.copy())
 
-print('-=' * 30)
-print(f'O Jogador {jogador["nome"]} jogou {len(jogador["gols"])} partidas.')
+    while True:
+        resposta = str(input('Quer continuar ? [S/N]')).upper()[0]
+        if resposta in 'SN':
+            break
+        print('ERRO ! Responda apenas S ou N.')
+    if resposta == 'N':
+        break
 
-for index, value in enumerate(jogador['gols']):
-    print(f'     => Na partida {index}, fez {value} gols.')
+print('-=' * 40)
+for key, value in enumerate(time):
+    print(f'{key:>4 }', end='')
+    for d in value.values():
+        print(f'{str(d):<15}', end='')
+    print()
 
-print(f'Foi um total de {jogador["total"]} de gols.')
+print('-' * 40)
