@@ -9,3 +9,13 @@
                 Olá, Mundo !
             ~~~~~~~~~~~~~~~~~~
 """
+
+
+def escreva(mensagem):
+    tamanho_mensagem = len(mensagem) + 4
+    print('~' * tamanho_mensagem)
+    print(f'    {mensagem}')
+    print('~' * tamanho_mensagem)
+
+
+escreva('Primeiro')
