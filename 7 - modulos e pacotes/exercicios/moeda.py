@@ -19,7 +19,7 @@ def metade(valor=0):
 
 
 def moeda(valor=0, moeda='R$'):
-    return f'{moeda}{round(valor, 2)}'.replace('.', ',')
+    return f'{moeda}{valor:>8.2f}'.replace('.', ',')
 
 
 
