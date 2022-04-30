@@ -12,12 +12,12 @@
 
 def notas(*notas, situacao=False):
     """
-    Função de notas e media de varios alunos
-    :param notas: Notas dos alunos
-    :param situacao(opcional): Situação do alunos em relação a sua média
-    :return: Retorna um dicionário com notas e media do aluno
+    Função para analisar notas e situações de vários alunos
+    :param notas: Um ou mais notas dos alunos (aceita várias notas)
+    :param situacao: Valor opcional, indicando se deve ou não adicionar a situação do aluno
+    :return: Retorna um dicionário com várias informações sobre a situação da turma
     """
-    retorno = {}
+    retorno = dict()
     retorno['total'] = len(notas)
     retorno['maior'] = max(notas)
     retorno['menor'] = min(notas)
