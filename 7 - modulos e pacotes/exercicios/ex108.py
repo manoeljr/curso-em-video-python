@@ -3,7 +3,7 @@
     chamada moeda() que consiga mostrar os valores como um valor
     monetário formatado.
 """
-from moeda import metade, dobro, aumentar, diminuir, moeda
+from utilidadesCeV.moeda import metade, dobro, aumentar, diminuir, moeda
 
 valor = float(input('Digite o valor: R$ '))
 

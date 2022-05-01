@@ -4,7 +4,7 @@
     Faça também um programa que importe esse módulo e use
     algumas dessas funções.
 """
-from moeda import metade, dobro, aumentar, diminuir
+from utilidadesCeV.moeda import metade, dobro, aumentar, diminuir
 
 valor = float(input('Digite o valor: R$ '))
 
